@@ -50,7 +50,7 @@ public class MIPushModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public void unsetAccount(String text) {
 
-        MiPushClient.setAlias(getReactApplicationContext(), text, null);
+        MiPushClient.unsetUserAccount(getReactApplicationContext(), text, null);
     }
 
 
